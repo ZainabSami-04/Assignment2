@@ -20,7 +20,7 @@ if (!$data || !isset($data['results'])) {
 }
 
 //Task 2: Data Visualization
-
+//Pico CSS
 echo "<!DOCTYPE html>";
 echo "<html lang='en'>";
 echo "<head>
@@ -28,7 +28,7 @@ echo "<head>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <title>Assignment 2</title>
        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css'>
-       
+
       </head>";
 echo "<body>";
 echo "<main class='container'>";
@@ -51,11 +51,11 @@ echo "<tbody>";
 foreach ($data['results'] as $record) {
     echo "<tr>
             <td>" . htmlspecialchars($record['year'] ) . "</td>
-            <td>" . htmlspecialchars($record['semester']) . "</td>
-            <td>" . htmlspecialchars($record['the_programs']) . "</td>
-            <td>" . htmlspecialchars($record['nationality']) . "</td>
-            <td>" . htmlspecialchars($record['colleges'] ) . "</td>
-            <td>" . htmlspecialchars($record['number_of_students']) . "</td>
+            <td>" . htmlspecialchars($record['semester']) ."</td>
+            <td>" . htmlspecialchars($record['the_programs']) ."</td>
+            <td>" . htmlspecialchars($record['nationality']) ."</td>
+            <td>" . htmlspecialchars($record['colleges'] ) ."</td>
+            <td>" . htmlspecialchars($record['number_of_students']) ."</td>
           </tr>";
 }
 
